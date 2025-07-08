@@ -6,6 +6,12 @@
 # AIDL / HIDL
 SYSTEM_EXT_MANIFEST_FILES += $(QCOM_COMMON_PATH)/system/telephony/atcmdfwd-saidl.xml
 
+PRODUCT_PACKAGES += \
+    xiaomi-telephony-stub
+
+PRODUCT_BOOT_JARS += \
+    xiaomi-telephony-stub
+
 # Properties
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     net.tethering.noprovisioning=true \
